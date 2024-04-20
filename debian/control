@@ -1,0 +1,12 @@
+Source: ros-rolling-flir-camera-description
+Section: misc
+Priority: optional
+Maintainer: Luis Camero <lcamero@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-ament-lint-common <!nocheck>, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-flir-camera-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-robot-state-publisher, ros-rolling-urdf, ros-rolling-xacro, ros-rolling-ros-workspace
+Description: FLIR camera Description package
