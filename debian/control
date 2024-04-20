@@ -1,0 +1,12 @@
+Source: ros-rolling-spinnaker-synchronized-camera-driver
+Section: misc
+Priority: optional
+Maintainer: Bernd Pfrommer <bernd.pfrommer@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-ament-cmake-black <!nocheck>, ros-rolling-ament-cmake-clang-format <!nocheck>, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-ament-lint-common <!nocheck>, ros-rolling-rclcpp, ros-rolling-rclcpp-components, ros-rolling-spinnaker-camera-driver, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-spinnaker-synchronized-camera-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-rclcpp, ros-rolling-rclcpp-components, ros-rolling-spinnaker-camera-driver, ros-rolling-ros-workspace
+Description: ROS2 driver for synchronized flir cameras using the Spinnaker SDK
