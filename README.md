@@ -1,3 +1,30 @@
+## flir_camera_driver (rolling) - 2.0.16-1
+
+The packages in the `flir_camera_driver` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --edit-track --rosdistro rolling --track rolling --override-release-repository-url https://github.com/ros-drivers-gbp/flir_camera_driver-release.git flir_camera_driver` on `Sat, 20 Apr 2024 10:56:45 -0000`
+
+These packages were released:
+- `flir_camera_description`
+- `flir_camera_msgs`
+- `spinnaker_camera_driver`
+- `spinnaker_synchronized_camera_driver`
+
+Version of package(s) in repository `flir_camera_driver`:
+
+- upstream repository: https://github.com/ros-drivers/flir_camera_driver.git
+- release repository: https://github.com/ros2-gbp/flir_camera_driver-release.git
+- rosdistro version: `2.0.15-1`
+- old version: `2.0.15-1`
+- new version: `2.0.16-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## flir_camera_driver (iron) - 2.2.16-1
 
 The packages in the `flir_camera_driver` repository were released into the `iron` distro by running `/usr/bin/bloom-release --rosdistro iron --track iron flir_camera_driver` on `Sat, 20 Apr 2024 10:39:35 -0000`
