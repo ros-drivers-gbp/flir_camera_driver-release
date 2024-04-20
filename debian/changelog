@@ -1,0 +1,25 @@
+ros-rolling-spinnaker-synchronized-camera-driver (2.0.16-1noble) noble; urgency=high
+
+  * updated docs for sync driver, switch to RST
+  * added follower exposure controller renamed individual -> master
+  * Contributors: Bernd Pfrommer
+
+ -- Bernd Pfrommer <bernd.pfrommer@gmail.com>  Sat, 20 Apr 2024 04:00:00 -0000
+
+ros-rolling-spinnaker-synchronized-camera-driver (2.0.15-1noble) noble; urgency=high
+
+  * fixes to compile on focal/galactic
+  * track incomplete frames
+  * fixed licensing documentation
+  * Contributors: Bernd Pfrommer
+
+ -- Bernd Pfrommer <bernd.pfrommer@gmail.com>  Thu, 28 Mar 2024 04:00:00 -0000
+
+ros-rolling-spinnaker-synchronized-camera-driver (2.0.11-1noble) noble; urgency=high
+
+  * first release as a ROS package on rolling
+  * Contributors: Bernd Pfrommer
+
+ -- Bernd Pfrommer <bernd.pfrommer@gmail.com>  Thu, 29 Feb 2024 05:00:00 -0000
+
+
