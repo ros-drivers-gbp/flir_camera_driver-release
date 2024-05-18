@@ -1,0 +1,12 @@
+Source: ros-humble-spinnaker-camera-driver
+Section: misc
+Priority: optional
+Maintainer: Bernd Pfrommer <bernd.pfrommer@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), curl, dpkg, ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libcurl4-openssl-dev, libswscale-dev, libusb-1.0-0-dev, libyaml-cpp-dev, python3-distro, ros-humble-ament-cmake, ros-humble-ament-cmake-clang-format <!nocheck>, ros-humble-ament-cmake-ros, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-camera-info-manager, ros-humble-flir-camera-msgs, ros-humble-image-transport, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-sensor-msgs, ros-humble-std-msgs, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-spinnaker-camera-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev, libusb-1.0-0-dev, libyaml-cpp-dev, ros-humble-camera-info-manager, ros-humble-flir-camera-msgs, ros-humble-image-transport, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-sensor-msgs, ros-humble-std-msgs, ros-humble-ros-workspace
+Description: ROS2 driver for flir spinnaker sdk
