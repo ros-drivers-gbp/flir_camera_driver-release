@@ -2,6 +2,9 @@
 Changelog for package spinnaker_synchronized_camera_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.17 (2024-05-18)
+-------------------
+
 2.1.16 (2024-04-20)
 -------------------
 * updated docs for sync driver, switch to RST
