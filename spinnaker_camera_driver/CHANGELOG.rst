@@ -2,13 +2,13 @@
 Changelog for package spinnaker_camera_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.1.17 (2024-05-18)
+2.2.17 (2024-05-18)
 -------------------
 * fix broken composable node by installing in correct location
-* Add FLIR-AX5 Camera (`#176 <https://github.com/ros-drivers/flir_camera_driver/issues/176>`_)
+* Add FLIR-AX5 Camera
 * Contributors: Bernd Pfrommer, anonymousarmadillo100
 
-2.1.16 (2024-04-20)
+2.2.16 (2024-04-20)
 -------------------
 * add option to disable external control (default!)
 * updated docs for sync driver, switch to RST
@@ -18,25 +18,26 @@ Changelog for package spinnaker_camera_driver
 * use proper name for camerainfo when using sync driver
 * Contributors: Bernd Pfrommer
 
-2.1.15 (2024-03-28)
+2.2.15 (2024-03-28)
 -------------------
-* fixes to compile on focal/galactic
+
 * Oryx parameter file
 * support for command nodes
-* remove more spinnaker imports, make spinnaker private
-* added blackfly GigE configuration file
-* track incomplete frames
-* fixed licensing documentation
+* updated docs
 * Contributors: Bernd Pfrommer, Sir-Photch
 
-2.1.14 (2024-03-22)
+2.2.14 (2024-03-17)
 -------------------
-* make spinnaker dependency private for sync driver build
+* make Spinnaker lib private to fix sync build problems
 * Contributors: Bernd Pfrommer
 
-2.1.13 (2024-03-13)
+2.2.13 (2024-03-13)
 -------------------
 * added blackfly GigE configuration file
+* Contributors: Bernd Pfrommer
+
+2.2.12 (2024-03-07)
+-------------------
 * track incomplete frames
 * fixed licensing documentation
 * provision camera driver for exposure control
@@ -44,13 +45,18 @@ Changelog for package spinnaker_camera_driver
 * avoid searching ROS path for library
 * Contributors: Bernd Pfrommer
 
-2.1.11 (2024-02-23)
+2.2.11 (2024-02-23)
 -------------------
-* Added connect_while_subscribed feature
+* added connect_while_subscribed feature
 * Added binning parameter
-* Export library and refactor for synchronized driver support
-* fixed stereo launch file serial number bug
+* install spinnaker library in same place as driver library
+* remove junk directories from search path
+* prepare single-camera driver for use with sync'ed driver
+* fixed stereo launch file serial nb bug
 * Contributors: Bernd Pfrommer, Luis Camero, buckleytoby
+
+2.2.10 (2023-12-02)
+-------------------
 
 2.0.8 (2023-11-14)
 ------------------

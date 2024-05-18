@@ -2,26 +2,29 @@
 Changelog for package spinnaker_synchronized_camera_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.1.17 (2024-05-18)
+2.2.17 (2024-05-18)
 -------------------
 
-2.1.16 (2024-04-20)
+2.2.16 (2024-04-20)
 -------------------
 * updated docs for sync driver, switch to RST
 * added follower exposure controller renamed individual -> master
 * Contributors: Bernd Pfrommer
 
-2.1.15 (2024-03-28)
+2.2.15 (2024-03-28)
 -------------------
 * fixes to compile on focal/galactic
 * Contributors: Bernd Pfrommer
 
-2.1.14 (2024-03-22)
+2.2.14 (2024-03-17)
 -------------------
-* remove direct dependency on spinnaker to fix broken build on ros2 farm
+* avoid direct spinnaker dependency
 * Contributors: Bernd Pfrommer
 
-2.1.13 (2024-03-13)
+2.2.13 (2024-03-13)
+-------------------
+
+2.2.12 (2024-03-07)
 -------------------
 * track incomplete frames
 * fixed licensing documentation
@@ -29,7 +32,7 @@ Changelog for package spinnaker_synchronized_camera_driver
 * fixed bugs discovered when running on GigE cams
 * Contributors: Bernd Pfrommer
 
-2.1.11 (2024-02-23)
+2.2.11 (2024-02-23)
 -------------------
-* First release as a ROS package
+* First release as ROS package
 * Contributors: Bernd Pfrommer
