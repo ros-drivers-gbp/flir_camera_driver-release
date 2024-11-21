@@ -14,7 +14,7 @@ tracks:
       :{release_inc} --os-name fedora
     - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
       :{release_inc} --os-name rhel
-    devel_branch: humble-release
+    devel_branch: ros2-release
     last_version: 2.1.17
     name: flir_camera_driver
     patches: null
