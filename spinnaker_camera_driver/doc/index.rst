@@ -37,9 +37,10 @@ Platforms
 ---------
 
 -  ROS2 Galactic under Ubuntu 20.04 LTS (no longer actively tested)
--  ROS2 Humble/Iron/Rolling under Ubuntu 22.04 LTS
+-  ROS2 Humble/Iron under Ubuntu 22.04 LTS
+   ROS2 Rolling/Jazzy under Ubuntu 24.04 LTS
 -  Spinnaker 3.1.0.79 (other versions may work as well but this is what
-   the continuous integration builds are using)o
+   the continuous integration builds are using)
 
 How to install
 ==============
@@ -184,6 +185,20 @@ that you can customize as needed.
    ros2 launch spinnaker_camera_driver driver_node.launch.py camera_type:=blackfly_s serial:="'20435008'"
 
 
+Using multiple cameras at the same time
+=======================================
+
+The FLIR Spinnaker does not support two programs accessing the Spinnaker SDK at the same time,
+even if two different cameras are accessed. Strange things happen, in particular with USB3 cameras.
+You can however run multiple cameras in the same
+address space using ROS2's Composable Node concept, see the example
+launch file ``multiple_cameras.launch.py``.
+
+If you are using hardware synchronized cameras please use the ``spinnaker_synchronized_camera_driver``,
+which will associate the images triggered by the same sync pulse with each other
+and give them identical time stamps.
+
+
 About time stamps
 =================
 
@@ -208,11 +223,11 @@ Blackfly S the parameters look like this:
 
 
 Network Configuration for GigE cameras
-=======================
+======================================
 
 The Spinnaker SDK abstracts away the transport layer so a GigE camera
 should work the same way as USB3: you point it to the serial number and
-you’re set.
+you're set.
 
 There are a few GigE-specific settings in the Transport Layer Control
 group that are important, in particular enabling jumbo frames from the
@@ -328,6 +343,36 @@ Known issues
    the same address space with a composable node (see stereo launch file
    for example).
 
+Troubleshooting/Common Issues
+=============================
+
+1) Driver doesn't find camera.
+   This is usually due to incorrect permissions, missing udev files etc. Install the Spinnaker SDK
+   and get SpinView to work.
+
+2) Driver doesn't publish images and/or warns about incomplete images for GigE cameras
+
+   .. code::
+
+      rate [Hz] in  39.76 out   0.00 drop   0% INCOMPLETE 100%
+
+   The reason for the incomplete images is usually that you are exceeding the network
+   bandwidth, causing packets to be dropped such that incomplete frames arrive at the host.
+   Check for the MTU on all network cards and switches to be 9000 (jumbo frames). Sometimes
+   the MTU for switches has to be set higher. Also make sure the GigE camera has jumbo frames
+   enabled, i.e. ``gev_scps_packet_size`` is set to 9000.
+
+3) Driver reports dropped packages. This means the connected subscriber is not picking up fast enough.
+   Check CPU utilization of subscribers and the available network bandwidth between driver and subscriber.
+
+4) Image seems laggy when viewed. This is usually not a camera driver issue, but related to ROS2 RMW
+   or the image viewer. Check CPU utilization on displaying host and network bandwidth.
+
+5) Camera doesn't reach desired frame rate.
+   First play around in SpinView to reproduce the problem there. For GigE cameras, check network bandwidth.
+   Switch to Bayer images to reduce network bandwidth by a factor of three.
+   Check your exposure time. The frame rate cannot exceed the inverse of the exposure time.
+
 
 Setting up Linux without Spinnaker SDK
 ======================================
@@ -335,14 +380,20 @@ Setting up Linux without Spinnaker SDK
 Only use these instructions if you did not install the Spinnaker SDK on
 your machine.
 
-1) Add the “flirimaging” group and make yourself a member of it
+1) Somewhere in your ``.bashrc`` file, set the following env variable:
+
+.. code::
+
+   export SPINNAKER_GENTL64_CTI=/opt/ros/${ROS_DISTRO}/lib/spinnaker-gentl/Spinnaker_GenTL.cti
+
+2) Add the “flirimaging” group and make yourself a member of it
 
 .. code::
 
    sudo addgroup flirimaging
    sudo usermod -a -G flirimaging ${USER}
 
-2) Bump the usbfs memory limits
+3) Bump the usbfs memory limits
 
 The following was taken from
 `here <https://www.flir.com/support-center/iis/machine-vision/application-note/using-linux-with-usb-3.1/>`__.
@@ -369,7 +420,7 @@ write the following text to it:
 
    exit 0
 
-3) Setup udev rules
+4) Setup udev rules
 
 .. code::
 
@@ -378,7 +429,7 @@ write the following text to it:
    sudo service udev restart
    sudo udevadm trigger
 
-4) Logout and log back in (or better, reboot)
+5) Logout and log back in (or better, reboot)
 
 ``sudo reboot``
 
