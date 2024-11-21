@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>spinnaker_camera_driver</name>
-  <version>2.1.17</version>
+  <version>3.0.0</version>
   <description>ROS2 driver for flir spinnaker sdk</description>
   <maintainer email="bernd.pfrommer@gmail.com">Bernd Pfrommer</maintainer>
   <license>Apache-2</license>
@@ -16,6 +16,7 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_ros</buildtool_depend>
+  <buildtool_depend>ros_environment</buildtool_depend> <!-- ROS_VERSION + ROS_DISTRO -->
 
   <build_depend>python3-distro</build_depend>  <!-- to get lsb_release for downloading Spinnaker -->
   <build_depend>curl</build_depend>  <!-- to get ca-certificates for downloading Spinnaker -->
