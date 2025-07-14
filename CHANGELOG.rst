@@ -2,6 +2,13 @@
 Changelog for package spinnaker_camera_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.0.3 (2025-07-14)
+------------------
+* fix compiler warnings
+* add dependency on libomp-dev
+* use spinnaker v4.2 and clean up
+* Contributors: Bernd Pfrommer
+
 3.0.2 (2025-05-25)
 ------------------
 * avoid ament_target_dependencies
