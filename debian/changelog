@@ -1,0 +1,164 @@
+ros-humble-flir-camera-msgs (3.0.5-1jammy) jammy; urgency=high
+
+  * modifications to compile on Ubuntu 26.04
+  * Contributors: Bernd Pfrommer
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Thu, 07 May 2026 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (3.0.4-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Tue, 18 Nov 2025 23:00:00 -0000
+
+ros-humble-flir-camera-msgs (3.0.3-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Sun, 13 Jul 2025 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (3.0.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Sat, 24 May 2025 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (3.0.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Mon, 31 Mar 2025 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (3.0.0-1jammy) jammy; urgency=high
+
+  * removed changelogs
+  * Contributors: Bernd Pfrommer
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Wed, 20 Nov 2024 23:00:00 -0000
+
+ros-humble-flir-camera-msgs (2.0.8-1jammy) jammy; urgency=high
+
+  * Changes.
+  * Contributors: Tony Baltovski
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Mon, 13 Nov 2023 23:00:00 -0000
+
+ros-humble-flir-camera-msgs (2.0.7-1jammy) jammy; urgency=high
+
+  * Changes.
+  * Contributors: Tony Baltovski
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Mon, 02 Oct 2023 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (2.0.6-1jammy) jammy; urgency=high
+
+  * updated changelog
+  * Contributors: Bernd Pfrommer
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Fri, 11 Aug 2023 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (2.0.5-1jammy) jammy; urgency=high
+
+  * updated changelog
+  * Contributors: Bernd Pfrommer
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Thu, 10 Aug 2023 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (2.0.4-1jammy) jammy; urgency=high
+
+  * updated changelogs
+  * Contributors: Bernd Pfrommer
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Wed, 09 Aug 2023 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (2.0.3-1jammy) jammy; urgency=high
+
+  * Changes.
+  * Contributors: Tony Baltovski
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Mon, 31 Jul 2023 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (2.0.2-1jammy) jammy; urgency=high
+
+  * Changes.
+  * Contributors: Tony Baltovski
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Thu, 27 Jul 2023 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (2.0.1-1jammy) jammy; urgency=high
+
+  * Changes.
+  * Contributors: Tony Baltovski
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Sun, 23 Jul 2023 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (2.0.0-1jammy) jammy; urgency=high
+
+  * Changes.
+  * more elaborate README
+  * added flir_camera_msgs package
+  * Contributors: Bernd Pfrommer, Tony Baltovski
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Wed, 19 Jul 2023 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (0.2.5-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Fri, 06 Jan 2023 19:18:00 -0000
+
+ros-humble-flir-camera-msgs (0.2.4-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Fri, 06 Jan 2023 10:43:00 -0000
+
+ros-humble-flir-camera-msgs (0.2.3-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Mon, 18 Apr 2022 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (0.2.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Sun, 27 Mar 2022 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (0.2.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Sun, 20 Mar 2022 23:00:00 -0000
+
+ros-humble-flir-camera-msgs (0.2.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Thu, 10 Mar 2022 23:00:00 -0000
+
+ros-humble-flir-camera-msgs (0.1.3-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Mon, 24 Sep 2018 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (0.1.2-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Thu, 26 Jul 2018 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (0.1.1-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Tue, 24 Jul 2018 22:00:00 -0000
+
+ros-humble-flir-camera-msgs (0.1.0-1jammy) jammy; urgency=high
+
+
+
+ -- "Bernd Pfrommer" <bernd.pfrommer@gmail.com>  Mon, 23 Jul 2018 22:00:00 -0000
+
+
